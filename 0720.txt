@@ -1,0 +1,15 @@
+
+public class ComputeArea {
+
+	// Question: Given the radius of a circle¡@for 10, determine the area
+	
+	public static void main(String[] args) {
+		// input 
+		int r = 10;
+		// algorithm
+		double Area= r * r * 3.14;
+		// output
+		System.out.println(Area);
+	}
+
+}

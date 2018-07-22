@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class SD {
+
+	public static void main(String[] args) {
+	
+	Scanner input  = new Scanner (System.in);
+	System.out.println("Enter the first number");
+	double a = input.nextDouble();
+	
+	System.out.println("Enter the second number");
+	double b = input.nextDouble();
+	
+	System.out.println("Enter the third number");
+	double c = input.nextDouble();
+	
+	double mean = (a + b +c) / 3;
+	double std= Math.sqrt((Math.pow(a - mean, 2) +
+						   Math.pow(b - mean, 2) +
+						   Math.pow(c - mean, 2)) / 3);
+	
+	System.out.println("mean = " + mean);
+	System.out.println("std = " + std);
+	
+	input.close();
+	}
+}

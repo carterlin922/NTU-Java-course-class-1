@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class ComputeArea {
+
+    // Question: Given the radius of a circle for 10, determine the area
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);
+        // input
+        System.out.println("Enter r ?");
+        int r = input.nextInt();
+        // algorithm
+        double Area;
+        if (r > 0) {
+            Area = r * r * 3.14;
+            System.out.println(Area);
+        } else {
+                System.out.println("Not a circle ! ");
+        }
+        input.close();
+    }
+}

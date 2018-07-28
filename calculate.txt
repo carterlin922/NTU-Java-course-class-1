@@ -1,0 +1,19 @@
+public class Calculate {
+
+    public static void main(String[] args) {
+
+        int x = 1;
+        x++;
+        System.out.println(x);
+
+        int x = 1;
+        int y = ++x ; // X先做運算+1 在指定給 y
+
+        System.out.println(x); // output = 2
+
+        int w = 1;
+        int z = w++; // 先將w指定給z 再將其整數+1
+
+        System.out.println(x); // output = 2
+    }
+}

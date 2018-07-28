@@ -1,0 +1,14 @@
+loop:
+
+for: 計數型
+while: 事件型 (不知次數)
+
+y = x ^3 - x - 2
+
+Q : 找根
+
+binary search
+i/p : 
+(1) x ^ 3 - x - 2
+(2) [a,b] - [1,2]
+(3) tolence : T = 10 ^ -9

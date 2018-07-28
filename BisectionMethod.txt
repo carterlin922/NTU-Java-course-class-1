@@ -1,0 +1,25 @@
+public class BisectionMethod {
+
+    public static void main(String[] args) {
+        double a = 1, b= 2, eps = 1e-10, c = 0;
+        // target function : x * x * x - x -2
+
+        while (b - a > eps) {
+            c = (a + b) / 2;
+
+            double fa = a * a * a - a - 2;
+            double fb = b * b * b - b - 2;
+            double fc = c * c * c - c - 2;
+
+            // if ((fa < 0 && fc > 0) || (fa > 0 && fc < 0 )
+            if (fa * fc < 0) {
+                b = c;
+            } else {
+                a = c;
+            }
+        }
+
+        System.out.println(c);
+        System.out.println(c * c * c - c - 2);
+    }
+}

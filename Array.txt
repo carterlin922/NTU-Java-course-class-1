@@ -1,0 +1,46 @@
+public class Array {
+
+    public static void main(String []args) {
+        int [] A = new int [5];
+
+        // generate random number
+
+        for (int i = 0; i < A.length; i++)
+            A[i] = (int) (Math.random() * 100);
+        // display A
+
+        for (int i = 0; i < A.length; i++) {
+            System.out.printf("%3d", A[i]);
+        }
+        System.out.println();
+
+        // find max of A
+        int max = A[0];
+        for (int i = 1; i < A.length; i++)
+            if(A[i] > max)
+                max = A[i];
+        System.out.println("MAX = " + max);
+
+        // sum of A
+        int sum = 0;
+        for(int i = 0; i < A.length; i++)
+            sum += A[i];
+        System.out.println("SUM = "+ sum);
+
+        // shuffling A
+        for (int i = 0; i < A.length; ++i) {
+            int j = (int) (Math.random() * A.length);
+
+            int tmp = A[i];
+            A[i] = A[j];
+            A[j] = tmp;
+        }
+        // display A
+
+        for (int i = 0; i < A.length; i++) {
+            System.out.printf("%3d", A[i]);
+        }
+        System.out.println();
+    }
+
+}

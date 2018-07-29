@@ -1,14 +1,18 @@
-loop:
+﻿loop:
 
 for: 計數型
 while: 事件型 (不知次數)
 
-y = x ^3 - x - 2
+Array 為0開始:
 
-Q : 找根
+------------  A (offset 偏移量)
+int
+------------
+int
+------------
+int
+------------
 
-binary search
-i/p : 
-(1) x ^ 3 - x - 2
-(2) [a,b] - [1,2]
-(3) tolence : T = 10 ^ -9
+
+A[1] 跳過一個int 取後面4個byte的資料
+

@@ -1,0 +1,28 @@
+public class Compounding {
+
+    public static void main(String[] args) {
+        int balance = 100;
+        int r = 10;
+        int goal = 200;
+
+        int years = 0; // need to be declared here due to scope
+        for (; balance < goal;) {
+            balance *= ( 1 + r / 100.0);
+            years++;
+        }
+
+        /*
+        // Second method: while loop
+
+        int years = 0;
+        while (balance < goal) {
+            balance *= (1 + r / 100.0);
+            years++;
+        }
+        */
+
+        System.out.println(years);
+        System.out.println(balance);
+
+    }
+}
